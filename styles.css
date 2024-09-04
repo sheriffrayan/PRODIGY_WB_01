@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; 
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.company-name {
+  color: white;
+}
+
+.nav-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-buttons li {
+  margin-left: 20px;
+}
+
+.nav-buttons .btn {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  font-size: 16px;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #fffcea;
+  transform: scale(1.05); 
+}
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+  text-align: center;
+  transition: padding 0.3s ease;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#home {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#about {
+  background-color: #3498db;
+  color: white;
+}
+
+#services {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#contact {
+  background-color: #9b59b6;
+  color: white;
+}
+.scrolled {
+  background-color: #111 !important;
+}
+@media (max-width: 768px) {
+  .nav-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-buttons {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .nav-buttons li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  section {
+      padding: 60px 20px;
+  }
+
+  h2 {
+      font-size: 28px; 
+  }
+}
